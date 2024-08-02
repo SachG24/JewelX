@@ -1,0 +1,181 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: #333; 
+    color: white;
+    padding: 16px; 
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px; 
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+.nav-links li {
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px; 
+}
+
+.form-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px; 
+    margin-bottom: 32px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 24px;
+    margin-bottom: 32px; 
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 8px; 
+    font-size: 19.2px; 
+    color: black;
+}
+
+.product-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+.product-item ul li {
+    margin: 8px; 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 16px; 
+}
+
+
+
+.job-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 600px;
+}
+.highlighted {
+    border: 5px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

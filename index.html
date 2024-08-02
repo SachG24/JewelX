@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelX Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JewelX Jewelry</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="job.html">Job Opportunities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to JewelX Jewelry!</h1>
+
+        <section class="form-section">
+            <h3>Before browsing, please answer the following questions:</h3>
+            <form action="https://submit-form.com/AEGDm9xVZ">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="age">Age:</label><br>
+                <input type="radio" id="U18" name="age" value="belowEighteen">
+                <label for="U18">Under 18</label><br>
+
+                <input type="radio" id="18-25" name="age" value="eightTeenToTwentyFive">
+                <label for="18-25">18-25</label><br>
+
+                <input type="radio" id="26-35" name="age" value="twentySixToThirtyFive">
+                <label for="26-35">26-35</label><br>
+
+                <input type="radio" id="36-45" name="age" value="thirtySixToFortyFive">
+                <label for="36-45">36-45</label><br>
+
+                <input type="radio" id="46-55" name="age" value="fortySixToFiftyFive">
+                <label for="46-55">46-55</label><br>
+
+                <input type="radio" id="55+" name="age" value="fiftyFivePlus">
+                <label for="55+">55+</label><br>
+
+                <label for="uName">User Name:</label><br>
+                <input type="text" id="uName" name="uName"><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter product name">
+            <button onclick="searchById()">Search</button>
+        </div>
+
+        <section class="product-grid">
+            
+            <div class="product-item">
+                <img src="images/crossNecklace.jpg" alt="Product 1" class="product-image" onclick="highlight(event)" id="cross necklace">
+                <h3>Women's Gold Plated Cross Necklace : $18.45</h3>
+                <ul>
+                    <li>14k Gold</li>
+                    <li>18 inch Necklace</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/evabelle.jpg" alt="Product 2" class="product-image" onclick="highlight(event)" id="paperclip bracelet">
+                <h3>Cubic Zirconia Paperclip Chain Bracelet : $26.99</h3>
+                <ul>
+                    <li>14k Gold Plated</li>
+                    <li>8pcs shiny 5A cubic zirconia</li>   
+                    <li>Hypoallergenic</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/Famarine.jpg" alt="Product 3" class="product-image" onclick="highlight(event)" id="famarine">
+                <h3>FAMARINE Gold Plated Layered Necklaces Set</h3>
+                <ul>
+                    <li>18k gold </li>
+                    <li>chain length(L) 20" with 3.15" extender. M: 16.54" with 2.76" extender. S: 15.75" with 2.95" extender</li>
+                    <li>Weight 0.59oz.</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/Feskive.jpg" alt="Product 4" class="product-image" onclick="highlight(event)" id="feskive">
+                <h3>Feskive Layered Necklaces for Women Silver Plated : $13.07 </h3>
+                <ul>
+                    <li> high quality brass and silver plated,lead free,nickel free and hypoallergenic</li>
+                    <li> 15"+2" extender,the outside Twist Rope length is:16.5"+2"</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/Ascomy.jpg" alt="Product 5" class="product-image" onclick="highlight(event)" id="pearl">
+                <h3>Ascomy Dainty Pearl Necklaces for Women : $19.99</h3>
+                <ul>
+                    <li>14k Gold Plated</li>
+                    <li>15.7"+2" with extension</li>
+                    <li>hypoallergenic, lead free and nickel free</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/Sewyer.jpg" alt="Product 6" class="product-image" onclick="highlight(event)" id="gold initial">
+                <h3>Sewyer Dainty Initial Necklaces for Women : $19.99</h3>
+                <ul>
+                    <li>14k Gold plated</li>
+                    <li>Customaizable choice of initial</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/17km.jpg" alt="Product 7" class="product-image" onclick="highlight(event)" id="6pc">
+                <h3>6 Pairs Gold Silver Chunky Hoop Earrings Set : $21.99</h3>
+                <ul>
+                    <li>Made of Copper with 14k Gold Plating</li>
+                    <li>10 times thicker than usual plated earrings</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/YEEZI.jpg" alt="Product 8" class="product-image" onclick="highlight(event)" id="9pc">
+                <h3>9 Pairs Small Huggie Hoop Earrings : $26.97</h3>
+                <ul>
+                    <li>14K real gold, lead-free and nickel-free, hypoallergenic</li>
+                    <li>Rich in styles. such as twisted earrings, Pearl Pendant earrings, square Earrings and chain earrings</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/17mile.jpg" alt="Product 9" class="product-image" onclick="highlight(event)" id="12pc">
+                <h3>12 Pairs Gold Hoop Earrings Set : $26.97</h3>
+                <ul>
+                    <li>Brass material and 925 sterling silver needles plus an advanced 14K real gold plating</li>
+                    <li>12 pairs including studs, huggie hoops, small hoops and hoop earrings</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/celestia.jpg" alt="Product 10" class="product-image" onclick="highlight(event)" id="silver initial">
+                <h3>Sterling Silver Initial Necklaces with Rose Gold Heart : $49.99</h3>
+                <ul>
+                    <li>18 Inch sterling silver chain</li>
+                    <li>Customaizable choice of initial</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/momentwish.jpg" alt="Product 11" class="product-image" onclick="highlight(event)" id="moissanite">
+                <h3> Moissanite Heart Necklace: $127.77</h3>
+                <ul>
+                    <li>6.5mm/1ct 3 prong setting. With 10 accent moissanite</li>
+                    <li> silver chain necklace that can be worn at 16 or 18 inches.</li>
+                </ul>
+            </div>
+            <div class="product-item">
+                <img src="images/Sllais.jpg" alt="Product 12" class="product-image" onclick="highlight(event)" id="hummingbird">
+                <h3>Gold Plated Hummingbird Pendant Necklace : $38.99</h3>
+                <ul>
+                    <li>Pendant size is 3127mm1.20.83, set with 6/10mm flower crystals and several different sizes of AAA zirconia on the circle</li>
+                    <li>18K Gold Plated is Hypoallergenic for skins</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> JewelX Jewelry. Good Grades Only</p>
+    </footer>
+</body>
+</html>
