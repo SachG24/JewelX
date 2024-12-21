@@ -1,1 +1,1 @@
-
+Hello! To all that view this project, this was my final project for my first web development course. We were prompted to make a jewelry store website for this project, and I worked on developing this alone. All the references to images I used are available in the sources.html file, which is also show as a hyperlink on the website's navigation bar. 
